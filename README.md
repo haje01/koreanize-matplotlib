@@ -1,6 +1,16 @@
 # koreanize-matplotlib
 matplotlib를 한국어 표시에 대응시킵니다.
 
+## 실행 환경
+- Python 3.13+
+- matplotlib
+
+## 설치
+
+```sh
+pip install koreanize-matplotlib
+```
+
 ## 사용법
 matplotlib를 import한 후 koreanize_matplotlib를 import합니다.
 
@@ -14,22 +24,19 @@ plt.xlabel('간단한 그래프')
 plt.show()
 ```
 
-
 ![demo](https://github.com/ychoi-kr/koreanize-matplotlib/raw/master/demo.png "demo")
 
-## 설치
+## 개발 환경 설정
 
 ```sh
-pip install koreanize-matplotlib
+uv sync
 ```
 
-또는
+## 테스트
 
 ```sh
-python setup.py install
+uv run pytest
 ```
-
 
 ## 사용한 폰트
 [나눔고딕](https://hangeul.naver.com/2021/fonts/nanum)
-

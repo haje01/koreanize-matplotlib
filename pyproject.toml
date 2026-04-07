@@ -1,0 +1,26 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "koreanize-matplotlib"
+version = "0.1.0"
+description = "matplotlib의 폰트 설정을 자동으로 한국어화"
+readme = "README.md"
+license = "MIT"
+requires-python = ">=3.13"
+authors = [
+    { name = "ychoi-kr", email = "ychoi_kr@naever.com" },
+]
+dependencies = [
+    "matplotlib",
+]
+
+[project.urls]
+Homepage = "https://github.com/ychoi-kr/koreanize-matplotlib"
+
+[dependency-groups]
+dev = [
+    "pytest",
+    "twine",
+]
